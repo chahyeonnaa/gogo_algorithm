@@ -18,6 +18,7 @@ public class 문자열_내_p와y의_개수 {
         if(p_count!=y_count)
             answer=false;
 
+
         return answer;
     }
 }
