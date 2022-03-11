@@ -26,3 +26,4 @@ int* solution(int lottos[], size_t lottos_len, int win_nums[], size_t win_nums_l
     answer[1] = arr[match]; //최소
     return answer;
 }
+
