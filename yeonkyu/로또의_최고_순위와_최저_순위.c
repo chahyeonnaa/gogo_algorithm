@@ -3,15 +3,15 @@
 #include <stdlib.h>
 
 int* solution(int lottos[], size_t lottos_len, int win_nums[], size_t win_nums_len) {
-    // return °ªÀº malloc µî µ¿Àû ÇÒ´çÀ» »ç¿ëÇØÁÖ¼¼¿ä. ÇÒ´ç ±æÀÌ´Â »óÈ²¿¡ ¸Â°Ô º¯°æÇØÁÖ¼¼¿ä.
-    int* answer = (int*)malloc(sizeof(int)*2); // ÃÖÀúµî¼ö¿Í ÃÖ´ëµî¼ö
-    int arr[7] = { 6,6,5,4,3,2,1 }; // arr[6] 6°³¸¦ ¸ÂÃèÀ»¶§ 1µî
+    // return ê°’ì€ malloc ë“± ë™ì  í• ë‹¹ì„ ì‚¬ìš©í•´ì£¼ì„¸ìš”. í• ë‹¹ ê¸¸ì´ëŠ” ìƒí™©ì— ë§ê²Œ ë³€ê²½í•´ì£¼ì„¸ìš”.
+    int* answer = (int*)malloc(sizeof(int)*2); // ìµœì €ë“±ìˆ˜ì™€ ìµœëŒ€ë“±ìˆ˜
+    int arr[7] = { 6,6,5,4,3,2,1 }; // arr[6] 6ê°œë¥¼ ë§ì·„ì„ë•Œ 1ë“±
     int zero = 0;
     int match = 0;
 
     for (int i = 0; i < lottos_len; i++) {
         if (lottos[i] == 0) {
-            zero++;//0³ª¿À¸é Áõ°¡
+            zero++;//0ë‚˜ì˜¤ë©´ ì¦ê°€
         }
         else {
             for (int j = 0; j < win_nums_len; j++) {
@@ -22,7 +22,7 @@ int* solution(int lottos[], size_t lottos_len, int win_nums[], size_t win_nums_l
             }
         }
     }
-    answer[0] = arr[match + zero]; //ÃÖ´ë
-    answer[1] = arr[match]; //ÃÖ¼Ò
+    answer[0] = arr[match + zero]; //ìµœëŒ€
+    answer[1] = arr[match]; //ìµœì†Œ
     return answer;
 }
