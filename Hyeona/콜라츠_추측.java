@@ -3,6 +3,7 @@ package Hyeona;
 public class 콜라츠_추측 {
     public int solution(int num) {
         int answer = 0;
+
         long numm=(long)num;
         while(true)
         {
