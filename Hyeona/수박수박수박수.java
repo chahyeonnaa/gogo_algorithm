@@ -16,6 +16,5 @@ public class 수박수박수박수 {
             if(i==n)
                 break;
         }
-        return answer;
-    }
+        return answer;}
 }
