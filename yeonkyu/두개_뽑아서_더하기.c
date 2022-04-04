@@ -8,7 +8,7 @@ int* solution(int numbers[], size_t numbers_len) {
     
     int i, j, a ,b= 0;
     int cnt = 0;
-    int flag=0;
+    int flag=0; 
     int* answer = (int*)malloc(sizeof(int)*200);
 
     for (i = 0; i < numbers_len-1; i++) {
