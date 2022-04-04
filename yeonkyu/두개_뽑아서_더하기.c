@@ -2,9 +2,9 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #define SWAP(a,b) {int c=a; a=b; b=c;}
-// numbers_lenÀº ¹è¿­ numbersÀÇ ±æÀÌÀÔ´Ï´Ù.
+// numbers_lenì€ ë°°ì—´ numbersì˜ ê¸¸ì´ì…ë‹ˆë‹¤.
 int* solution(int numbers[], size_t numbers_len) {
-    // return °ªÀº malloc µî µ¿Àû ÇÒ´çÀ» »ç¿ëÇØÁÖ¼¼¿ä. ÇÒ´ç ±æÀÌ´Â »óÈ²¿¡ ¸Â°Ô º¯°æÇØÁÖ¼¼¿ä.
+    // return ê°’ì€ malloc ë“± ë™ì  í• ë‹¹ì„ ì‚¬ìš©í•´ì£¼ì„¸ìš”. í• ë‹¹ ê¸¸ì´ëŠ” ìƒí™©ì— ë§ê²Œ ë³€ê²½í•´ì£¼ì„¸ìš”.
     
     int i, j, a ,b= 0;
     int cnt = 0;
@@ -39,6 +39,6 @@ int* solution(int numbers[], size_t numbers_len) {
     
     
     
-    
+     
     return answer;
 }
