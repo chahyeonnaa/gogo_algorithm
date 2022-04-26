@@ -40,5 +40,5 @@ int* solution(int numbers[], size_t numbers_len) {
     
     
      
-    return answer;
+    return answer; 
 }
