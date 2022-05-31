@@ -3,13 +3,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-// ÆÄ¶ó¹ÌÅÍ·Î ÁÖ¾îÁö´Â ¹®ÀÚ¿­Àº const·Î ÁÖ¾îÁı´Ï´Ù. º¯°æÇÏ·Á¸é ¹®ÀÚ¿­À» º¹»çÇØ¼­ »ç¿ëÇÏ¼¼¿ä.
+// íŒŒë¼ë¯¸í„°ë¡œ ì£¼ì–´ì§€ëŠ” ë¬¸ìì—´ì€ constë¡œ ì£¼ì–´ì§‘ë‹ˆë‹¤. ë³€ê²½í•˜ë ¤ë©´ ë¬¸ìì—´ì„ ë³µì‚¬í•´ì„œ ì‚¬ìš©í•˜ì„¸ìš”.
 char* solution(const char* phone_number) {
-    // return °ªÀº malloc µî µ¿Àû ÇÒ´çÀ» »ç¿ëÇØÁÖ¼¼¿ä. ÇÒ´ç ±æÀÌ´Â »óÈ²¿¡ ¸Â°Ô º¯°æÇØÁÖ¼¼¿ä.
+    // return ê°’ì€ malloc ë“± ë™ì  í• ë‹¹ì„ ì‚¬ìš©í•´ì£¼ì„¸ìš”. í• ë‹¹ ê¸¸ì´ëŠ” ìƒí™©ì— ë§ê²Œ ë³€ê²½í•´ì£¼ì„¸ìš”.
     char* answer = (char*)malloc(strlen(phone_number) + 1);
     strcpy(answer, phone_number);
     for (int i = 0; i < strlen(phone_number) - 4; i++) {
         answer[i] = '*';
     }
-    return answer;
+    return answer; 
 }
