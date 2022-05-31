@@ -12,4 +12,4 @@ char* solution(const char* phone_number) {
         answer[i] = '*';
     }
     return answer; 
-}
+} 
