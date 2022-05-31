@@ -12,6 +12,7 @@ public class 핸드폰_번호_가리기 {
         {
             answer=answer+phone_number.charAt(i);
         }
+
         return answer;
     }
 }
