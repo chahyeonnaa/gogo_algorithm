@@ -3,12 +3,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-// ÆÄ¶ó¹ÌÅÍ·Î ÁÖ¾îÁö´Â ¹®ÀÚ¿­Àº const·Î ÁÖ¾îÁý´Ï´Ù. º¯°æÇÏ·Á¸é ¹®ÀÚ¿­À» º¹»çÇØ¼­ »ç¿ëÇÏ¼¼¿ä.
+// íŒŒë¼ë¯¸í„°ë¡œ ì£¼ì–´ì§€ëŠ” ë¬¸ìžì—´ì€ constë¡œ ì£¼ì–´ì§‘ë‹ˆë‹¤. ë³€ê²½í•˜ë ¤ë©´ ë¬¸ìžì—´ì„ ë³µì‚¬í•´ì„œ ì‚¬ìš©í•˜ì„¸ìš”.
 char* solution(const char* s) {
-    // return °ªÀº malloc µî µ¿Àû ÇÒ´çÀ» »ç¿ëÇØÁÖ¼¼¿ä. ÇÒ´ç ±æÀÌ´Â »óÈ²¿¡ ¸Â°Ô º¯°æÇØÁÖ¼¼¿ä.
+    // return ê°’ì€ malloc ë“± ë™ì  í• ë‹¹ì„ ì‚¬ìš©í•´ì£¼ì„¸ìš”. í• ë‹¹ ê¸¸ì´ëŠ” ìƒí™©ì— ë§žê²Œ ë³€ê²½í•´ì£¼ì„¸ìš”.
     char* answer = (char*)malloc(strlen(s) + 1);
     strcpy(answer, s);
-
+ 
     for (int i = 0, cnt = 0; i < strlen(answer); i++, cnt++) {
         if (cnt % 2 == 0 && islower(answer[i]))
             answer[i] -= ('a' - 'A');
